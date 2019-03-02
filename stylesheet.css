@@ -1,8 +1,36 @@
+/* Fonts */
+
+@font-face {
+    font-family: "Aniron";
+    src: url(https://www.fontspace.com/pete-klassen/aniron »
+    anirm___.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Tengwar Annatar";
+    src: url(https://www.dafont.com/tengwar-annatar.font » tnganb.ttf)
+    format("truetype");
+}
+
+@font-face {
+    font-family: "Party Business";
+    src: url(https://www.fontspace.com/nancy-lorenz/party-business » partybusiness.ttf) 
+    format("truetype");
+}
+
 body{
     background-color: white;
     margin: 0;
     color: black;
-    font-family: 'Comfortaa', cursive;
+    font-family: 'Party Business', cursive;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Aniron', cursive;
+}
+
+.bitonio {
+    font-family: 'Tengwar Annatar', cursive;
 }
 /* Navbar */
 
@@ -20,10 +48,14 @@ header a {
     transition: .5s;
 }
 
+.navbar {
+    background-color: orange;
+}
+
 nav{
     display: flex;
     justify-content: space-between;
-}
+} 
 
 /* Header (Carousel) */
 
