@@ -23,15 +23,19 @@ body{
     margin: 0;
     color: black;
     font-family: 'Party Business', cursive;
+    font-size: 16pt;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, .dead, .reward {
     font-family: 'Aniron', cursive;
 }
 
 .bitonio {
     font-family: 'Tengwar Annatar', cursive;
+    color: #FCCEA0;
+    font-size: 1em;
 }
+
 /* Navbar */
 
 
@@ -48,7 +52,7 @@ header a {
     transition: .5s;
 }
 
-.navbar {
+.bg-dark {
     background-color: orange;
 }
 
@@ -56,6 +60,10 @@ nav{
     display: flex;
     justify-content: space-between;
 } 
+
+.nav-link.active {
+    border-bottom: 2px solid white;
+}
 
 /* Header (Carousel) */
 
@@ -73,13 +81,23 @@ nav{
 
 /* Section : Fellows */ 
 
+.nav-link {
+    padding: 0;
+    background-color: transparent;
+}
+
 .wantedtitle {
-    font-size: 1.5em;
+    font-size: 1em;
 }
 .wantedsubtitle {
     font-style: normal;
     font-weight: normal;  
-    font-size: 1em;            
+    font-size: .7em;            
+}
+
+#Fellows {
+    background-image: url(https://www.toptal.com/designers/subtlepatterns/patterns/white-waves.png);
+    background-repeat: repeat;
 }
 
 #Fellows ul {
@@ -107,9 +125,10 @@ nav{
     position: relative;
     margin: 1em;
     padding: .5em;
-    background: #fff;
+    background: #000;
     border: 1px solid #424242;
     border-radius: 8px 8px 0 0;
+    color: #fff;
 }
 
 #Fellows figure {
@@ -127,6 +146,7 @@ nav{
     opacity: .5;
     width: 100%;
     border-radius: 8%;
+    object-fit: cover;
 }
 
 .reward, .dead {
@@ -164,7 +184,7 @@ nav{
 }
 
 #Fellows article:hover h3 {
-    top: 70%;
+    top: 50%;
     transform: scale(0.8);
 }
 #Fellows article:hover .dead, #Fellows article:hover .reward {
@@ -175,11 +195,11 @@ nav{
 }
     
 
-.button {
+/*.button {
     padding: .5em 1em;
     margin: .5em;
     border: 1px solid #424242;
-    border-radius: 5px;
+    border-radius: 5px;*/
 }
 .flexbox {
     display: flex;
@@ -187,6 +207,17 @@ nav{
 }
 section {
     margin-bottom: 1em;
+    background-color: #F5F2EB;
+}
+
+.nav-link {
+    background-color: none;
+    color: #C9C6BF;
+}
+
+.nav-link .active {
+    background-color: none;
+    color: orange;
 }
 
 /* Reward */
