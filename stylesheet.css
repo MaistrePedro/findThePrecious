@@ -86,6 +86,10 @@ nav{
     background-color: transparent;
 }
 
+.actual {
+    border-bottom: 3px solid #FE661D;
+}
+
 .wantedtitle {
     font-size: 1em;
 }
