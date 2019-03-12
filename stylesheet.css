@@ -2,19 +2,18 @@
 
 @font-face {
     font-family: "Aniron";
-    src: url(https://www.fontspace.com/pete-klassen/aniron »
-    anirm___.ttf) format("truetype");
+    src: url('anirm___.ttf') format("truetype");
 }
 
 @font-face {
     font-family: "Tengwar Annatar";
-    src: url(https://www.dafont.com/tengwar-annatar.font » tnganb.ttf)
+    src: url('tnganb.ttf')
     format("truetype");
 }
 
 @font-face {
     font-family: "Party Business";
-    src: url(https://www.fontspace.com/nancy-lorenz/party-business » partybusiness.ttf) 
+    src: url('partybusiness.ttf') 
     format("truetype");
 }
 
