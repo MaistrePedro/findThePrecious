@@ -78,6 +78,14 @@ nav{
     object-fit: cover;
 }
 
+header {
+    margin-bottom: 1.5em;
+}
+
+.carousel-caption h5 {
+    font-size: 3em;
+}
+
 /* Section : Fellows */ 
 
 .nav-link {
@@ -120,10 +128,6 @@ nav{
 #Fellows li.active { background-color: #424242; }
 #Fellows li.active:hover { background-color: #535353; color: #CCC }
 
-#Fellows .flexbox {
-    flex-wrap: wrap;
-}
-
 #Fellows article {
     position: relative;
     margin: 1em;
@@ -132,13 +136,13 @@ nav{
     border: 1px solid #424242;
     border-radius: 8px 8px 0 0;
     color: #fff;
+    max-width: 315px;
 }
 
 #Fellows figure {
-    border-radius: 8px;
     position: relative;
     height: 250px;
-    width: 250px;
+    width: 100%;
     margin: 0;
     overflow: hidden;
 }
@@ -198,11 +202,11 @@ nav{
 }
     
 
-/*.button {
+.button {
     padding: .5em 1em;
     margin: .5em;
     border: 1px solid #424242;
-    border-radius: 5px;*/
+    border-radius: 5px;
 }
 .flexbox {
     display: flex;
@@ -258,7 +262,7 @@ section {
 }
 
 #Hunters {
-    margin-bottom: 2em;
+    padding-bottom: 2em;
 }
 
 .meta {
@@ -278,7 +282,9 @@ section {
     border-radius: 5px;
     border-top: 3px solid rgb(85, 144, 211);
     transition: .2s;
+    max-width: 150px;
 }
+
 .like-button:hover {
     color: white;
     border-color: transparent;
